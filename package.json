@@ -15,6 +15,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
+    "publish": "electron-forge publish",
     "release": "electron-forge release",
     "lint": "oxlint && oxfmt --check",
     "lint:fix": "oxlint --fix && oxfmt --write"
@@ -36,9 +37,14 @@
     "vite": "^8.3.1"
   },
   "dependencies": {
+    "@electron-forge/publisher-github": "^8.0.1",
     "electron-log": "^5.4.4",
     "electron-squirrel-startup": "^1.0.1",
     "vue": "^3.5.43",
     "vue-router": "^5.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColeenMiclo/coursElectronJS"
   }
 }

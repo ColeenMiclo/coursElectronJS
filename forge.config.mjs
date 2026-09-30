@@ -53,6 +53,20 @@ const config = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      "name": "@electron-forge/publisher-github",
+      "config": {
+        "repository": {
+          owner: 'ColeenMiclo',
+          name: 'coursElectronJS',
+        },
+        "prerelease": false,
+        "draft": true
+      }
+    }
+  ]
 };
 
 export default config;
+
